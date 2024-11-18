@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTUM Cafe-Menu</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(228, 224, 225);
+            color: rgb(73, 54, 40);
+        }
+
+        h2 {
+            font-size: 70px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-display: flex;
+            align-content: end;
+            margin: 12px 0px 0px 0px;
+        }
+
+        #Header_Image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 350;
+            height: 200;
+        }
+
+        nav {
+            background-color: rgb(73, 54, 40);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(228, 224, 225);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: rgb(228, 224, 225);
+            color: rgb(73, 54, 40);
+        }
+
+        .Menu {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        
+        #Logo {
+            display: inline-flex;
+            margin-left: 0%;
+            margin-bottom: 0%;
+        }
+
+        #Logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        hr {
+            background-color: rgb(73, 54, 40);
+            border: none;
+            height: 1px;
+            width: 40%;
+            margin-top: 0%;
+            margin-left: 0%;
+        }
+
+        .Options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Items {
+            font-style: italic;
+            display: inline-block;
+        }
+
+        .Rate {
+            font-style: italic;
+            display: inline-block;
+        }
+
+        .Order_Form {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        #User_Details {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        .Order {
+            padding-left: 0%;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Order_Items {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Quantity {
+            margin-bottom: 15px;
+        }
+
+        #Button {
+            padding: 15px 15px;
+            background-color: rgb(73, 54, 40);
+            color: rgb(228, 224, 225);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(73, 54, 40);
+            color: rgb(228, 224, 225);
+            overflow: hidden;
+        }
+
+        #Footer_Logo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Footer {
+            padding-left: 850px;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <figure>
+            <img id="Header_Image" src="Images/cafe Logo.png" alt="TUTAM Logo">
+        </figure>
+        <nav>
+            <a href="#Menu">Menu</a>
+            <a href="#Order_Form">Order Form</a>
+        </nav>   
+    </header>
+    <main>
+        <section id="Menu">
+            <h2>Menu</h2>
+            <article class="Menu">
+                <figure id="Logo">
+                    <img src="Images/Coffee.png" alt="Coffee logo">
+                    <h3>COFFEE</h3>
+                </figure>
+                <hr>
+                <div class="Options">
+                        <p class="Items">
+                            Espresso <br>
+                            Double Espresso <br>
+                            Latte <br>
+                            Americano <br>
+                        </p>
+                        <p class="Rate">
+                            Rs.120 <br>
+                            Rs.130 <br>
+                            Rs.120 <br>
+                            Rs.110 <br>
+                        </p>
+                        <p class="Items">
+                            Macchiato <br>
+                            Flat White <br>
+                            Cappuccino <br>
+                        </p>
+                        <p class="Rate">
+                            Rs.140 <br>
+                            Rs.150 <br>
+                            Rs.160 <br>
+                        </p>
+                </div>
+            </article>
+            <article class="Menu">
+                <figure id="Logo">
+                    <img src="Images/Tea.png" alt="Tea Logo">
+                    <h3>TEA</h3>
+                </figure>
+                <hr>
+                <div class="Options">
+                    <p class="Items">
+                        Tea <br>
+                        Black Tea <br>
+                        Lemon Tea <br>
+                        Mango Tea <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.70 <br>
+                        Rs.50 <br>
+                        Rs.70 <br>
+                        Rs.80 <br>
+                    </p>
+                    <p class="Items">
+                        Jasmine Tea <br>
+                        Green Tea <br>
+                        Mint Tea <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.120 <br>
+                        Rs.100 <br>
+                        Rs.70 <br>
+                    </p>
+                </div>
+            </article>
+            <article class="Menu">
+                <figure id="Logo">
+                    <img src="Images/Non Coffee.png" alt="Non-Coffee Logo">
+                    <h3>NON-COFFEE</h3>
+                </figure>
+                <hr>
+                <div class="Options">
+                    <p class="Items">
+                        Hot Chocolate <br>
+                        Vanilla Milkshake <br>
+                        Chocolate Milkshake <br>
+                        Oreo Milkshake <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.70 <br>
+                        Rs.100 <br>
+                        Rs.120 <br>
+                        Rs.120 <br>
+                    </p>
+                    <p class="Items">
+                        Smoothie <br>
+                        Lemonade <br>
+                        Lemon Mint <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.120 <br>
+                        Rs.80 <br>
+                        Rs.70 <br>
+                    </p>
+                </div>
+            </article>
+            <article class="Menu">
+                <figure id="Logo">
+                    <img src="Images/Desserts.png" alt="Desserts Logo">
+                    <h3>DESSERTS</h3>
+                </figure>
+                <hr>
+                <div class="Options">
+                    <p class="Items">
+                        Strawberry Waffle <br>
+                        Chocolate Waffle <br>
+                        Cinnamon Roll <br>
+                        Croissant <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.50 <br>
+                        Rs.50 <br>
+                        Rs.30 <br>
+                        Rs.40 <br>
+                    </p>
+                    <p class="Items">
+                        Lemon Pie <br>
+                        Brownies <br>
+                        Cheesecake <br>
+                        Chocolate Muffin <br>
+                    </p>
+                    <p class="Rate">
+                        Rs.80 <br>
+                        Rs.50 <br>
+                        Rs.70 <br>
+                        Rs.80 <br>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="Order_Form">
+            <h2>Place Your Order</h2>
+            <form class="Order_Form">
+                <div id="User_Details">
+                    <label>First Name* : <input type="text" required></label>
+                    <label>Last Name* : <input type="text" required></label>
+                </div>
+                <br>
+                <p><center>Please select your order below</center></p>
+                <ul class="Order">
+                    <div>
+                        <li><b>COFFEE</b>
+                            <ul class="Order_Items">
+                                <div>
+                                    <li><label for="Espresso">Espresso : </label></li>
+                                    <br>
+                                    <li><label for="Double Espresso">Double Espresso : </label></li>
+                                    <br>
+                                    <li><label for="Latte">Latte : </label></li>
+                                    <br>
+                                    <li><label for="Americano">Americano : </label></li>
+                                    <br>
+                                    <li><label for="Macchiato">Macchiato : </label></li>
+                                    <br>
+                                    <li><label for="Flat White">Flat White : </label></li>
+                                    <br>
+                                    <li><label for="Cappuccino">Cappuccino : </label></li>
+                                    <br>
+                                </div>
+                                <div>
+                                    <li class="Quantity"><input id="Espresso" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Double Espresso" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Latte" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Americano" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Macchiato" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Flat White" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Cappuccino" type="number" min="0" max="100" value="0"></li>
+                                </div>   
+                            </ul>
+                        </li>
+                        <li><b>NON-COFFEE</b>
+                            <ul class="Order_Items">
+                                <div>
+                                    <li><label for="Hot Chocolate">Hot Chocolate : </label></li>
+                                    <br>
+                                    <li><label for="Vanilla Milkshake">Vanilla Milkshake : </label></li>
+                                    <br>
+                                    <li><label for="Chocolate Milkshake">Chocolate Milkshake : </label></li>
+                                    <br>
+                                    <li><label for="Oreo Milkshake">Oreo Milkshake : </label></li>
+                                    <br>
+                                    <li><label for="Smoothie">Smoothie : </label></li>
+                                    <br>
+                                    <li><label for="Lemonade">Lemonade : </label></li>
+                                    <br>
+                                    <li><label for="Lemon Mint">Lemon Mint : </label></li>
+                                    <br>
+                                </div>
+                                <div>
+                                    <li class="Quantity"><input id="Hot Chocolate" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Vanilla Milkshake" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Chocolate Milkshake" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Oreo Milkshake" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Smoothie" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Lemonade" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Lemon Mint" type="number" min="0" max="100" value="0"></li>
+                                </div> 
+                            </ul>
+                        </li>
+                    </div>
+                    <div>
+                        <li><b>TEA</b>
+                            <ul class="Order_Items">
+                                <div>
+                                    <li><label for="Tea">Tea : </label></li>
+                                    <br>
+                                    <li><label for="Black Tea">Black Tea : </label></li>
+                                    <br>
+                                    <li><label for="Lemon Tea">Lemon Tea : </label></li>
+                                    <br>
+                                    <li><label for="Mango Tea">Mango Tea : </label></li>
+                                    <br>
+                                    <li><label for="Jasmine Tea">Jasmine Tea : </label></li>
+                                    <br>
+                                    <li><label for="Green Tea">Green Tea : </label></li>
+                                    <br>
+                                    <li><label for="Mint Tea">Mint Tea : </label></li>
+                                    <br>
+                                </div>
+                                <div>
+                                    <li class="Quantity"><input id="Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Black Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Lemon Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Mango Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Jasmine Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Green Tea" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Mint Tea" type="number" min="0" max="100" value="0"></li>
+                                </div>   
+                            </ul>
+                        </li>
+                        <li><b>DESSERTS</b>
+                            <ul class="Order_Items">
+                                <div>
+                                    <li><label for="Strawberry Waffle">Strawberry Waffle : </label></li>
+                                    <br>
+                                    <li><label for="Chocolate Waffle">Chocolate Waffle : </label></li>
+                                    <br>
+                                    <li><label for="Cinnamon Roll">Cinnamon Roll : </label></li>
+                                    <br>
+                                    <li><label for="Croissant">Croissant : </label></li>
+                                    <br>
+                                    <li><label for="Lemon Pie">Lemon Pie : </label></li>
+                                    <br>
+                                    <li><label for="Brownies">Brownies : </label></li>
+                                    <br>
+                                    <li><label for="Cheesecake">Cheesecake : </label></li>
+                                    <br>
+                                    <li><label for="Chocolate Muffin">Chocolate Muffin : </label></li>
+                                    <br>
+                                </div>
+                                <div>
+                                    <li class="Quantity"><input id="Strawberry Waffle" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Chocolate Waffle" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Cinnamon Roll" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Croissant" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Lemon Pie" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Brownies" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Cheesecake" type="number" min="0" max="100" value="0"></li>
+                                    <li class="Quantity"><input id="Chocolate Muffin" type="number" min="0" max="100" value="0"></li>
+                                </div>   
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+                <label>Add-on (for selected items only) : <input type="radio"></label>
+                <br> <br>
+                <label for="Message">Message to server :</label>
+                <br>
+                <textarea id="Message" rows="7" cols="95" placeholder="Type any message or instructions here!"></textarea>
+                <p>*Required Details.</p>
+                <center><input id="Button" type="submit" value="Go To Checkout!"></center>
+                <br> 
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="Footer_Logo">
+            <div><img src="Images/Cafe Logo DC.png" alt="Cafe Logo" height="100px" width="179px"></div>
+            <div id="Footer"><p>Made with love by Titus Thomas</p></div>
+        </div>
+    </footer>
+</body>
+</html>
