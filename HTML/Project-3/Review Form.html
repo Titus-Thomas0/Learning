@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+</head>
+<body>
+    <form>
+        <label>First Name : <input type="text" required></label>
+        <br> <br>
+        <label>Last Name : <input type="text" required></label>
+        <br> <br>
+        <label for="Review">Choose what's your reviewing from the list :</label>
+        <input list="Review_Cate" name="Review" id="Review" required>
+        <datalist id="Review_Cate">
+            <option value="Movie">
+            <option value="Book">
+            <option value="Website">
+            <option value="Restaurant">
+            <option value="Gadgets">
+        </datalist>
+        <br> <br>
+        <label>Would you like to try again? :
+            <input type="radio" name="Try_again">Yes
+            <input type="radio" name="Try_again">No
+            <input type="radio" name="Try_again">Maybe
+        </label>
+        <br> <br>
+        <label>How much rating would you give?(Out of 5) :
+            <input type="number" min="1" max="5" required>
+        </label>
+        <br> <br>
+        <label for="Comments">Write your thoughts! :</label>
+        <br>
+        <textarea id="Comments" rows="7" cols="42" placeholder="Enter your thoughts here!" maxlength="250"></textarea>
+        <br> <br>
+        <label for="Image">Share your experence with us with pictures(if possible) : 
+            <input type="file">
+        </label>
+        <br> <br>
+        <input type="submit" value="Submit Review!">
+    </form>
+</body>
+</html>
