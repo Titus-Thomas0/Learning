@@ -1,0 +1,8 @@
+h1 {
+    border: 10px dotted purple;
+    width: max-content;
+}
+
+p {
+    font: 300 14px 'Times New Roman', Times, serif;
+}

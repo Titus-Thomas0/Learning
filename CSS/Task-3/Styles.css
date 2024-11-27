@@ -1,0 +1,55 @@
+#first_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: #ffcbd1;
+    background-color: red;
+}
+
+#second_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: #ffdbbb;
+    background-color: orange;
+}
+
+#third_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: #ffffc5;
+    background-color: yellow;
+}
+
+#fourth_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: rgb(191, 227, 180);
+    background-color: green;
+}
+
+#fifth_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: skyblue;
+    background-color: blue;
+}
+
+#sixth_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: rgb(158,182,208);
+    background-color: indigo;
+}
+
+#seventh_color {
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    color: rgb(208, 184, 218);
+    background-color: violet;
+}

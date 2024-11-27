@@ -1,0 +1,13 @@
+#outer {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+#inner {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/tiger-dope-amoled-3840x2160-18370.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
